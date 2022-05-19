@@ -17,6 +17,6 @@ app.use(cors())
 app.use(express.json());// usa json no body
 app.use(routes);// usa "grupo" de rotas
 
-app.listen(3337, () => {//porta e retorno
+app.listen(process.env.PORT || 3337, () => {//porta e retorno
     console.log('rodando')
 })
