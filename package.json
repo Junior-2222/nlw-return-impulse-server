@@ -1,0 +1,64 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "//scripts": {
+    "npx": "scripts rodam com npx",
+    "test": "",
+    "build":"tsc para js em dist",
+    "start":"",
+    "dev": "(ts-node-dev){like nodemon} (src/server.ts){alvo}",
+    "db": "gerenciar o banco de dados do prisma"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "start":"node dist/server.js",
+    "dev": "ts-node-dev src/server.ts",
+    "db": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "//devDependencies": {
+    "--save-dev": "-D",
+    "@swc/jest": "tipagem com swc no jest vá em https://swc.rs/docs/usage/jest -> mude jest.config.js",
+    "@types/cors": "",
+    "@types/express": "",
+    "@types/jest": "",
+    "@types/node": "",
+    "@types/nodemailer": "",
+    "jest": "",
+    "prisma": "orm js->SQL # //npx prisma init{gera /prisma,.env,.git..} //npx prisma migrate{dev|deploy; gera as mudanças}",
+    "ts-node": "instalado pois extensão .ts no jest precisa",
+    "ts-node-dev": "tipo nodemon, faz LIVE-RELOAD",
+    "typescript": "tsc=typescript //npx tsc --init //gera tsconfig.json //mude target:2022 //mude rootDir,outDir"
+  },
+  "devDependencies": {
+    "@swc/jest": "^0.2.20",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^17.0.31",
+    "@types/nodemailer": "^6.4.4",
+    "jest": "^28.1.0",
+    "prisma": "^3.13.0",
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  },
+  "//dependencies": {
+    "--save-prod": "-d, --save, -S, {nada} ",
+    "@prisma/client": "Use o Prisma Client para enviar consultas ao seu banco de dados, (ja vem tipado ts)",
+    "cors": "",
+    "express": "back. rotas etc",
+    "nodemailer": "manda email"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.13.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.5"
+  }
+}
